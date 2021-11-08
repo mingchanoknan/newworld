@@ -151,7 +151,7 @@
         border-radius: 0;
         background-color: #232220;
         padding-top: 0;
-        min-width: 8.2em;
+        min-width: 7.6em;
         margin-top: -2px !important;
       }
       .dropdown-item {
@@ -247,6 +247,7 @@ padding-top:8.5px ;
           <ul class="navbar-nav mr-auto">
             <li class="nav-item dropdown">
               <a
+              id="show1"
                 class="nav-link px-4 item-nav"
                 type="button"
                 role="button"
@@ -267,6 +268,7 @@ padding-top:8.5px ;
             </li>
             <li class="nav-item dropdown">
               <a
+              id="show1"
                 class="nav-link item-nav px-4"
                 type="button"
                 role="button"
@@ -283,6 +285,7 @@ padding-top:8.5px ;
 
             <li class="nav-item dropdown">
               <a
+              id="show1"
                 class="nav-link item-nav px-4"
                 type="button"
                 role="button"
@@ -445,7 +448,7 @@ padding-top:8.5px ;
             <h6 style="text-align: center" class="h">
               English (US)&emsp;<i
                 class="fas fa-chevron-down"
-                id="dropdown"
+                
               ></i>
             </h6>
           </div>
@@ -523,49 +526,36 @@ padding-top:8.5px ;
     </footer>
   </body>
   <script>
-    var count = 0;
+    var d = document.getElementById("dropdown");
+    var d2 = document.getElementById("dropdown2");
+    var d3 = document.getElementById("dropdown3");
     function check() {
-      console.log(count);
-      if (count === 0) {
-        document
-          .getElementById("dropdown")
-          .setAttribute("style", "transform: rotate(180deg)");
-        count = 1;
+      if (document.getElementById("show1").classList.contains("show")) {
+        d.setAttribute("style", "transform: rotate(180deg)");
+        d2.setAttribute("style", "transform: rotate(0deg)");
+        d3.setAttribute("style", "transform: rotate(0deg)");
       } else {
-        document
-          .getElementById("dropdown")
-          .setAttribute("style", "transform: rotate(0deg)");
-        count = 0;
+        d.setAttribute("style", "transform: rotate(0deg)");
       }
     }
 
-    var count2 = 0;
     function check2() {
-      if (count2 == 0) {
-        document
-          .getElementById("dropdown2")
-          .setAttribute("style", "transform: rotate(180deg)");
-        count2 = 1;
+      if (document.getElementById("show2").classList.contains("show")) {
+        d.setAttribute("style", "transform: rotate(0deg)");
+        d2.setAttribute("style", "transform: rotate(180deg)");
+        d3.setAttribute("style", "transform: rotate(0deg)");
       } else {
-        document
-          .getElementById("dropdown2")
-          .setAttribute("style", "transform: rotate(0deg)");
-        count2 = 0;
+        d2.setAttribute("style", "transform: rotate(0deg)");
       }
     }
 
-    var count3 = 0;
     function check3() {
-      if (count3 == 0) {
-        document
-          .getElementById("dropdown3")
-          .setAttribute("style", "transform: rotate(180deg)");
-        count3 = 1;
+      if (document.getElementById("show3").classList.contains("show")) {
+        d.setAttribute("style", "transform: rotate(0deg)");
+        d2.setAttribute("style", "transform: rotate(0deg)");
+        d3.setAttribute("style", "transform: rotate(180deg)");
       } else {
-        document
-          .getElementById("dropdown3")
-          .setAttribute("style", "transform: rotate(0deg)");
-        count3 = 0;
+        d3.setAttribute("style", "transform: rotate(0deg)");
       }
     }
     function change1(){
