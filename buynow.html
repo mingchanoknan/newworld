@@ -227,90 +227,88 @@ padding-top:8.5px ;
 
   <body>
     <nav class="navbar navbar-expand-lg px-4 bg-nav">
-        <a class="navbar-brand" href="index.html"
-          ><img
-            src="logo-newword.svg"
-            style="width: 40px"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item dropdown">
-              <a
+      <a class="navbar-brand" href="index.html"
+        ><img src="logo-newword.svg" style="width: 40px"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a
               id="show1"
-                class="nav-link px-4 item-nav"
-                type="button"
-                role="button"
-                onclick="check()"
-                data-bs-toggle="dropdown"
-                >GAME&emsp;
-                <i class="fas fa-chevron-down" id="dropdown"></i>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">ABOUT</a></li>
-                <li><a class="dropdown-item" href="#">MAP</a></li>
-                <li><a class="dropdown-item" href="#">MEDIA</a></li>
-                <li><a class="dropdown-item" href="#">FAQ</a></li>
-              </ul>
-            </li>
-            <li class="nav-link px-4">
-              <a>NEWS</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-              id="show1"
-                class="nav-link item-nav px-4"
-                type="button"
-                role="button"
-                onclick="check2()"
-                data-bs-toggle="dropdown"
-                >SOCIAL&emsp;<i class="fas fa-chevron-down" id="dropdown2"></i
-              ></a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">CREATOR PROGRAM</a></li>
-                <li><a class="dropdown-item" href="#">COMMUNITY CONTENT</a></li>
-                <li><a class="dropdown-item" href="#">FORUMS</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a
-              id="show1"
-                class="nav-link item-nav px-4"
-                type="button"
-                role="button"
-                onclick="check3()"
-                data-bs-toggle="dropdown"
-                >SUPPORT&emsp;<i class="fas fa-chevron-down" id="dropdown3"></i
-              ></a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">SERVER STATUS</a></li>
-                <li><a class="dropdown-item" href="#">SOUPORT</a></li>
-              </ul>
-            </li>
-          </ul>
-
-          <div class="collapse navbar-collapse justify-content-end">
-            <button
+              class="nav-link px-4 item-nav"
               type="button"
-              class="my-lg-0 btn nav-buynow fw-bold pl-2 navbar-text"
-              style="display: inline-block"
-              onclick="window.location.href='buynow.html'"
-            >
-              BUY NOW
-            </button>
-          </div>
+              role="button"
+              onclick="check()"
+              data-bs-toggle="dropdown"
+              >GAME&emsp;
+              <i class="fas fa-chevron-down" id="dropdown"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="about.html">ABOUT</a></li>
+              <li><a class="dropdown-item">MAP</a></li>
+              <li><a class="dropdown-item" href="media.html">MEDIA</a></li>
+              <li><a class="dropdown-item" href="#">FAQ</a></li>
+            </ul>
+          </li>
+          <li class="nav-link px-4" onclick="window.location.href='news.html'">
+            <a>NEWS</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              id="show2"
+              class="nav-link item-nav px-4"
+              type="button"
+              role="button"
+              onclick="check2()"
+              data-bs-toggle="dropdown"
+              >SOCIAL&emsp;<i class="fas fa-chevron-down" id="dropdown2"></i
+            ></a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item">CREATOR PROGRAM</a></li>
+              <li><a class="dropdown-item">COMMUNITY CONTENT</a></li>
+              <li><a class="dropdown-item">FORUMS</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              id="show3"
+              class="nav-link item-nav px-4"
+              type="button"
+              role="button"
+              onclick="check3()"
+              data-bs-toggle="dropdown"
+              >SUPPORT&emsp;<i class="fas fa-chevron-down" id="dropdown3"></i
+            ></a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item">SERVER STATUS</a></li>
+              <li><a class="dropdown-item">SOUPORT</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="collapse navbar-collapse justify-content-end">
+          <button
+            type="button"
+            class="my-lg-0 btn nav-buynow fw-bold pl-2 navbar-text"
+            style="display: inline-block"
+            onclick="window.location.href='buynow.html'"
+          >
+            BUY NOW
+          </button>
         </div>
+      </div>
     </nav>
     <div style="position: relative;">
         <img src="bg-buynow.png" style="width: 100%;height: 420px;object-fit: cover;"  />
@@ -378,8 +376,6 @@ padding-top:8.5px ;
 </div>
 </div>
 </div>
-
-
     <footer style="position: relative">
       <div
         style="
