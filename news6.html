@@ -176,6 +176,56 @@
                                     }
                                 }
                             </script>
+                            <div id="myModal" class="modal">
+                                <span class="close" onclick="closepopup()">&times;</span>
+                                <div class="center-img">
+                                    <div style="width: 65%; margin-bottom: 20%">
+                                        <div class="bg-img" id="img-bg">
+                                            <iframe width="100%" height="540px" style="padding: 1rem" src="https://www.youtube.com/embed/BELoZO7UZZ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="myModal2" class="modal">
+                                <span class="close" onclick="closepopup()">&times;</span>
+                                <div class="center-img">
+                                    <div style="width: 65%; margin-bottom: 20%">
+                                        <div class="bg-img" id="img-bg">
+                                            <img id="img1" style="width: 100%; padding: 1rem"/>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="myModal3" class="modal">
+                                <span class="close" onclick="closepopup()">&times;</span>
+                                <div class="center-img">
+                                    <div style="width: 65%; margin-bottom: 20%">
+                                        <div class="bg-img" id="img-bg">
+                                            <img id="img2" style="width: 100%; padding: 1rem"/>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <script>
+                                function popup(){
+                                    document.getElementById("myModal").style.display = "block";
+                                }
+                                function popup2(){
+                                    document.getElementById("myModal2").style.display = "block";
+                                    document.getElementById("img1").src = "about_news/about_new3_2.jpg";
+                                }
+                                function popup3(){
+                                    document.getElementById("myModal3").style.display = "block";
+                                    document.getElementById("img2").src = "about_news/about_new3_3.jpg";
+                                }
+                                function closepopup() {
+                                    document.getElementById("myModal").style.display = "none";
+                                    document.getElementById("myModal2").style.display = "none";
+                                    document.getElementById("myModal3").style.display = "none";
+                                };
+                            </script>
                         </div>
                     </div>
                 </div>

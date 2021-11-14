@@ -178,6 +178,27 @@
                                     }
                                 }
                             </script>
+                            <div id="myModal" class="modal">
+                                <span class="close" onclick="closepopup()">&times;</span>
+                                <div class="center-img">
+                                    <div style="width: 65%; margin-bottom: 20%">
+                                        <div class="bg-img" id="img-bg">
+                                            <img id="img1" style="width: 100%; padding: 1rem"/>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <script>
+                                var modal = document.getElementById("myModal");
+                                function popup(){
+                                    document.getElementById("img1").src = "new_img/img_news3.jpg";
+                                    modal.style.display = "block";
+                                }
+                                function closepopup() {
+                                    modal.style.display = "none";
+                                };
+                            </script>
                         </div>
                     </div>
                 </div>
