@@ -232,7 +232,7 @@
   }
   .line-footer {
     content: "";
-    background-image: url(https://media.discordapp.net/attachments/878251719853760526/906154649030123560/new-world-sprites_1.png);
+    background-image: url(im_site/new-world-sprites_1.png);
     background-repeat: repeat-x;
 
     opacity: 0.3;
@@ -668,6 +668,7 @@ a:hover{
     width: 100%;
     height: auto!important;
     margin-bottom: 32px;
+    cursor: pointer;
 }
 .text-div {
     letter-spacing: 0;
@@ -1016,4 +1017,44 @@ h3.articletxt{
     position: relative;
     top: 1px;
     left: 2px;
+}
+.modal {
+    display: none; /* Hidden by default */
+    justify-content: center;
+    justify-items: center;
+    position: fixed; /* Stay in place */
+    z-index: 10000; /* Sit on top */
+    left: 0;
+    top: 0;
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 1); /* Black w/ opacity */
+}
+.close,
+.closeVideo {
+    position: absolute;
+    top: 1%;
+    right: 17%;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: 100;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus,
+.closeVideo :hover,
+.closeVideo {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+.center-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+.bg-img {
+    background-image: url(./image_buynow_and_main/bg-btn.png);
 }
