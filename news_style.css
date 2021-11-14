@@ -821,6 +821,7 @@ h3.articletxt{
     padding: 0 0 16px 30px;
     box-sizing: content-box;
     display: block;
+    top: 50px;
     position: sticky;
     
 }
@@ -922,4 +923,97 @@ h3.articletxt{
 .sidebar-box-active{
     background-color: #1f1e1c;
     margin-top: 0;
+}
+.SearchResults {
+    padding: 93px 30px 48px;
+    max-width: 1920px;
+    margin-left: 12%;
+    margin-right: auto;
+    background-color: transparent;
+}
+.searchResults-heading {
+    text-transform: none;
+    font-family: 'IM Fell DW Pica',serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.8125rem;
+    line-height: 1.2;
+    color: #d5d5d5;
+    margin: 48px auto 0;
+    overflow-wrap: break-word;
+}
+.searchResults-word {
+    text-transform: none;
+    font-family: 'IM Fell DW Pica',serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.8125rem;
+    line-height: 1.2;
+    color: #c7b299;
+    margin: 48px auto 0;
+    overflow-wrap: break-word;
+}
+.search-im{
+    width: 400px;
+}
+.search-newshead{
+    text-indent: 0;
+    text-transform: none;
+    font-family: 'IM Fell DW Pica',serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 1.33333;
+    color: #d5d5d5;
+}
+.search-cat{
+    text-transform: none;
+    font-family: 'Sarabun',Arial,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: .8125rem;
+    line-height: 1;
+    letter-spacing: .24em;
+    text-transform: uppercase;
+    color: #c7b299;
+    margin-top: 15px;
+}
+.search-detail{
+    text-transform: none;
+    font-family: 'Sarabun',Arial,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: .01e;
+    color: #d5d5d5;
+    margin-top: 15px;
+}
+.search-readmore{
+    display: inline-block;
+    letter-spacing: 0;
+    text-indent: 0;
+    text-transform: none;
+    font-family: 'Sarabun',Arial,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: .01em;
+    color: #ffb10f;
+    text-decoration: none;
+}
+.search-readmore:hover{
+    color: #ffb10f;
+}
+.search-readmore-arr{
+    display: inline-block;
+    background: url(im_site/iconstuff.png) -43px -54px no-repeat;
+    width: 6px;
+    height: 11px;
+    margin-right: 8px;
+    transform: rotateY(180deg);
+    position: relative;
+    top: 1px;
+    left: 2px;
 }
