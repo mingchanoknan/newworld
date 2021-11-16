@@ -100,7 +100,7 @@
     pointer-events: none;
 }
 .topicbg{
-    background:url(/im_site/topicbg.png) ;
+    background:url(/image_buynow_and_main/headers-faqx.png) ;
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -274,6 +274,7 @@ a:hover{
     padding: 1em;
     margin-left: -47%;
     margin-top: -2%;
+    font-size: 1.5rem;
 }
 .btn-pic{
     width: 30px;
@@ -290,4 +291,23 @@ a:hover{
 }
 .current{
     background-color: #141312;
-    color: #ffb10f}
+    color: #ffb10f
+}
+.question{
+    margin-top: 20px;
+}
+.nav-buynow {
+    color: #ffb10f;
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    border: 1px solid #ffb10f;
+    border-radius: 0;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+.nav-buynow:hover {
+    color: #232220;
+    background-color: #ffb10f;
+  }
