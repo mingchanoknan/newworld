@@ -310,4 +310,36 @@ a:hover{
 .nav-buynow:hover {
     color: #232220;
     background-color: #ffb10f;
+}
+.rol {
+    animation-name: cssAnimation;
+    animation-duration: 0.25s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
   }
+  
+  @keyframes cssAnimation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(90deg);
+    }
+}
+.rolup {
+    animation-name: cssAnimationup;
+    animation-duration: 0.25s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes cssAnimationup {
+    from {
+      transform: rotate(90deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+}
