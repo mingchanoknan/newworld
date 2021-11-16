@@ -150,7 +150,7 @@
     pointer-events: none;
 }
 .topicbg{
-    background:url(/im_site/topicbg.png) ;
+    background:url(im_site/topicbg.png) ;
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -232,7 +232,7 @@
   }
   .line-footer {
     content: "";
-    background-image: url(im_site/new-world-sprites_1.png);
+    background-image: url(image_buynow_and_main/line-footer.png);
     background-repeat: repeat-x;
 
     opacity: 0.3;

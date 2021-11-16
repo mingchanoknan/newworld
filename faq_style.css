@@ -100,7 +100,7 @@
     pointer-events: none;
 }
 .topicbg{
-    background:url(/image_buynow_and_main/headers-faqx.png) ;
+    background:url(image_buynow_and_main/headers-faqx.png) ;
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -182,7 +182,7 @@
   }
   .line-footer {
     content: "";
-    background-image: url(https://media.discordapp.net/attachments/878251719853760526/906154649030123560/new-world-sprites_1.png);
+    background-image: url(image_buynow_and_main/line-footer.png);
     background-repeat: repeat-x;
 
     opacity: 0.3;
