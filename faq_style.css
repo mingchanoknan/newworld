@@ -1,0 +1,345 @@
+.box{
+    display:inline-block;
+    height:auto;
+    margin-bottom:2vw;
+    padding:0 2%;
+    width:33.3%;
+}
+.box-sh .linkspace{
+    height:auto;
+    border:1px solid transparent;
+    display:inline-block;
+    overflow:hidden;
+    text-decoration:none;
+}
+.box-sh .linkspace:hover{
+    border:1px solid #888;
+    background-color:rgba(61,40,18,.25);
+    
+}
+
+.tag{
+    display:inline-block;    
+    font-weight:400;
+    text-decoration:none;
+    font-family:sans-serif;
+    font-size:.8125rem;
+    letter-spacing:.24em;
+    text-transform:uppercase;
+    color:#fff1ce;
+    margin-bottom:10px;
+}
+.txtbox{
+    width:100%;
+    padding:25px 18px 48px;
+}
+ 
+.topic{
+    padding:0;
+    height:3rem;
+    position:relative;
+    z-index:100;
+    color:#eeefed;
+}
+.area{
+    max-width:1920px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.bgtexture{
+    position:fixed;
+    width:100%;
+    height:100%;
+    left:50%;
+    transform:translatex(-50%);
+    max-width:1920px;
+    z-index:-1;
+}
+.bg-top{
+    top:0;
+    background:url(im_site/texturetop.png) no-repeat top;
+}
+.bg-bt{
+    bottom:0;
+    background:url(im_site/texturebt.jpg) no-repeat bottom
+}
+.content-alg{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    font:1rem/1 Arial,sans-serif;
+    overflow:hidden;
+    z-index:1;
+    min-width:50%;
+    align-items:center;
+    justify-content:center;
+}
+.txt-light{
+    text-shadow:0 0 4px #272624
+}
+.minh {
+    min-height: 360px;
+}
+.hdcon{
+    display:flex;
+    justify-content:center;
+    flex-direction:column-reverse;
+    padding:90px 40px;
+    color:#d5d5d5;
+}
+.topicbg-con {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: 1920px;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    pointer-events: none;
+}
+.topicbg{
+    background:url(image_buynow_and_main/headers-faqx.png) ;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 25%;
+}
+.topic-area{
+    max-width:1080px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 2em;
+    
+}
+.wrapper::before{
+    content: "";
+    display: inline-block;
+    position: relative;
+    height: 3px;
+    width: 127px;
+    background: url(im_site/iconstuff.png);
+    background-position-y: -244px;
+    left: -14px;
+    background-position-x: -627px;
+}
+.wrapper::after{
+    content: "";
+    display: inline-block;
+    position: relative;
+    height: 3px;
+    width: 127px;
+    background: url(im_site/iconstuff.png);
+    background-position-y: -244px;
+    left: 4px;
+    background-position-x: -764px;
+}
+.topicstyle{
+    font-family: 'IM Fell DW Pica',serif;
+    font-weight: 400;
+    font-size: 1.875rem;
+    line-height: 1.2;
+    letter-spacing: .3em;
+    text-transform: uppercase;
+    flex: 0 0 auto;
+    margin: 0;
+}
+
+.bg-nav {
+    background-color: #232220;
+    /* height: 60px; */
+  }
+  .item-nav {
+    height: 50px;
+  }
+  .fab{
+      color: white;
+  }
+  .fab:hover {
+    color: #ffb10f;
+    cursor: pointer;
+  }
+  .topic {
+    font-family: "IM Fell DW Pica", serif;
+    text-align: center;
+  }
+  .back-to-top:hover h4 {
+    color: #ffb10f;
+  }
+
+  .back-to-top:hover {
+    cursor: pointer;
+  }
+  footer {
+    background-color: #272624;
+  }
+  .line-footer {
+    content: "";
+    background-image: url(image_buynow_and_main/line-footer.png);
+    background-repeat: repeat-x;
+
+    opacity: 0.3;
+  }
+  .h,
+  .f {
+    color: #eeefed;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .h:hover {
+    color: #ffb10f;
+    cursor: pointer;
+  }
+  .f:hover {
+    color: #eeefed;
+  }
+  .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eeefed;
+    font-size: 16px;
+    
+  }
+  .nav-link:hover,
+  .dropdown-item:hover {
+    background-color: black;
+    color: #ffb10f;
+  }
+.navbar {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+.navbar-brand {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+ 
+
+.dropdown-menu {
+    border-radius: 0;
+    background-color: #232220;
+    padding-top: 0;
+    min-width: 8.2em;
+    margin-top: -2px !important;
+  }
+  .dropdown-item {
+    color: #eeefed;
+    
+    font-size: 16px;
+  }
+  .games:hover {
+    fill: #ffb10f;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+.buynow{
+    background-color: #ffb10f;
+    border-radius: 0;
+    width: 25%;
+    padding: 3px;
+    margin: 5px;
+} 
+.topic-gaming{
+    font-size: 36px;
+    font-family: "IM Fell DW Pica", serif;
+    color:#d5d5d5;
+
+}
+.ques{
+    font-size: 18px;
+    font-family: "IM Fell DW Pica", serif;
+    color:inherit;
+    background-color: inherit;
+    color: #FFF;
+    border: inherit;
+    padding: 1em;
+    margin-left: -47%;
+    margin-top: -2%;
+    font-size: 1.5rem;
+}
+.btn-pic{
+    width: 30px;
+    height: 30px;
+    background-color: inherit;
+    border: inherit;
+}
+.ans{
+    color: #eeefed;
+    font-family: 'Sarabun', sans-serif;
+    margin-left: -45%;
+    margin-top: -1%;
+    font-size: 15px;
+}
+.current{
+    background-color: #141312;
+    color: #ffb10f
+}
+.question{
+    margin-top: 20px;
+}
+.nav-buynow {
+    color: #ffb10f;
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    border: 1px solid #ffb10f;
+    border-radius: 0;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+.nav-buynow:hover {
+    color: #232220;
+    background-color: #ffb10f;
+}
+.rol {
+    animation-name: cssAnimation;
+    animation-duration: 0.25s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes cssAnimation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(90deg);
+    }
+}
+.rolup {
+    animation-name: cssAnimationup;
+    animation-duration: 0.25s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes cssAnimationup {
+    from {
+      transform: rotate(90deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }

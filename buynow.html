@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>New World Editions | New World</title>
     <link
-      href="title.png"
+      href="./image_buynow_and_main/title.png"
       rel="icon"
       type="image/x-icon"
     />
@@ -47,12 +47,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="news_style.css">
     <style>
 
       body {
        
-
-        background-image: url("bg-body.jpg");
+background-color: #232220;
+        
 
         color: #d5d5d5;
         font-family: 'Sarabun', sans-serif;
@@ -85,7 +86,7 @@
       }
       .line-footer {
         content: "";
-        background-image: url("line-footer.png");
+        background-image: url("./image_buynow_and_main/line-footer.png");
         background-repeat: repeat-x;
 
         opacity: 0.3;
@@ -151,7 +152,7 @@
         border-radius: 0;
         background-color: #232220;
         padding-top: 0;
-        min-width: 8.2em;
+        min-width: 7.6em;
         margin-top: -2px !important;
       }
       .dropdown-item {
@@ -213,7 +214,7 @@ padding-top:8.5px ;
 /* change-bnt */
 .bg-click{
   
-  background-image: url("bg-btn.png");
+  background-image: url("./image_buynow_and_main/bg-btn.png");
   width: fit-content;
   height:60px ;
 
@@ -227,109 +228,112 @@ padding-top:8.5px ;
 
   <body>
     <nav class="navbar navbar-expand-lg px-4 bg-nav">
-        <a class="navbar-brand" href="index.html"
-          ><img
-            src="logo-newword.svg"
-            style="width: 40px"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link px-4 item-nav"
-                type="button"
-                role="button"
-                onclick="check()"
-                data-bs-toggle="dropdown"
-                >GAME&emsp;
-                <i class="fas fa-chevron-down" id="dropdown"></i>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">ABOUT</a></li>
-                <li><a class="dropdown-item" href="#">MAP</a></li>
-                <li><a class="dropdown-item" href="#">MEDIA</a></li>
-                <li><a class="dropdown-item" href="#">FAQ</a></li>
-              </ul>
-            </li>
-            <li class="nav-link px-4">
-              <a>NEWS</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link item-nav px-4"
-                type="button"
-                role="button"
-                onclick="check2()"
-                data-bs-toggle="dropdown"
-                >SOCIAL&emsp;<i class="fas fa-chevron-down" id="dropdown2"></i
-              ></a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">CREATOR PROGRAM</a></li>
-                <li><a class="dropdown-item" href="#">COMMUNITY CONTENT</a></li>
-                <li><a class="dropdown-item" href="#">FORUMS</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link item-nav px-4"
-                type="button"
-                role="button"
-                onclick="check3()"
-                data-bs-toggle="dropdown"
-                >SUPPORT&emsp;<i class="fas fa-chevron-down" id="dropdown3"></i
-              ></a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">SERVER STATUS</a></li>
-                <li><a class="dropdown-item" href="#">SOUPORT</a></li>
-              </ul>
-            </li>
-          </ul>
-
-          <div class="collapse navbar-collapse justify-content-end">
-            <button
+      <a class="navbar-brand" href="index.html"
+        ><img src="./image_buynow_and_main/logo-newword.svg" style="width: 40px"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a
+              id="show1"
+              class="nav-link px-4 item-nav"
               type="button"
-              class="my-lg-0 btn nav-buynow fw-bold pl-2 navbar-text"
-              style="display: inline-block"
-              onclick="window.location.href='buynow.html'"
-            >
-              BUY NOW
-            </button>
-          </div>
+              role="button"
+              onclick="check()"
+              data-bs-toggle="dropdown"
+              >GAME&emsp;
+              <i class="fas fa-chevron-down" id="dropdown"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="about.html">ABOUT</a></li>
+              <li><a class="dropdown-item">MAP</a></li>
+              <li><a class="dropdown-item" href="media.html">MEDIA</a></li>
+              <li><a class="dropdown-item" href="#">FAQ</a></li>
+            </ul>
+          </li>
+          <li class="nav-link px-4" onclick="window.location.href='news.html'">
+            <a>NEWS</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              id="show2"
+              class="nav-link item-nav px-4"
+              type="button"
+              role="button"
+              onclick="check2()"
+              data-bs-toggle="dropdown"
+              >SOCIAL&emsp;<i class="fas fa-chevron-down" id="dropdown2"></i
+            ></a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item">CREATOR PROGRAM</a></li>
+              <li><a class="dropdown-item">COMMUNITY CONTENT</a></li>
+              <li><a class="dropdown-item">FORUMS</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              id="show3"
+              class="nav-link item-nav px-4"
+              type="button"
+              role="button"
+              onclick="check3()"
+              data-bs-toggle="dropdown"
+              >SUPPORT&emsp;<i class="fas fa-chevron-down" id="dropdown3"></i
+            ></a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item">SERVER STATUS</a></li>
+              <li><a class="dropdown-item">SUPORT</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="collapse navbar-collapse justify-content-end">
+          <button
+            type="button"
+            class="my-lg-0 btn nav-buynow fw-bold pl-2 navbar-text"
+            style="display: inline-block"
+            onclick="window.location.href='buynow.html'"
+          >
+            BUY NOW
+          </button>
         </div>
+      </div>
     </nav>
+    <div class="bgtexture bg-bt"></div>
+        <div class="bgtexture bg-top"></div>
     <div style="position: relative;">
-        <img src="bg-buynow.png" style="width: 100%;height: 420px;object-fit: cover;"  />
+        <img src="./image_buynow_and_main/bg-buynow.png" style="width: 100%;height: 420px;object-fit: cover;"  />
     <div class="head-text topic">
 <h2>N E W&emsp;W O R L D</h2>
 <h2>E D I T I O N S</h2>
     </div>
     <div class="head-line-left">
         <img
-            src="line-left.png"
+            src="./image_buynow_and_main/line-left.png"
           />
     </div>
     <div class="head-line-right">
-        <img src="line-right.png"/>
+        <img src="./image_buynow_and_main/line-right.png"/>
     </div>
     </div>
 </div>
-<div class="container">
+<div class="container px-3">
 <div class="row my-5" >
   <div class="col-4 mt-5" >
     <div style="display: flex;justify-content: center;">
-    <img id="img-buynow" src="img-buynow-1.jpg" style="width: 80%; "/>
+    <img id="img-buynow" src="./image_buynow_and_main/img-buynow-1.jpg" style="width: 80%; "/>
   </div>
     <h3 class="topic my-4" id="price">$49.99</h3>
     <div style="display: flex;justify-content: center;">
@@ -339,23 +343,23 @@ padding-top:8.5px ;
     <button type="button" class="btn btn-warning fw-bolder">BUY ON STEAM</button>
   </div>
   </div>
-<div class="col-8">
+<div class="col-7">
   <div class="row">
     <div class="col-4 bg-click" id="bg-btn-1" style=" width: fit-content;">
       <div class="test" id="bg-btn-1-1">
-<p class=" fw-bolder btn-click btn-clicks" id="bg-btn-1-text" style="font-size: 12px;" onclick="change1()">D E L U X E&emsp;E D I T I O N</p>
+<p class=" fw-bolder btn-click btn-clicks" id="bg-btn-1-text" style="font-size: .8rem; letter-spacing: 0.05em !important;" onclick="change1()">D E L U X E&emsp;E D I T I O N</p>
       </div>
       
     </div>
     <div class="col-1"></div>
 <div class="col-4 "  style="width: fit-content;" id="bg-btn-2">
   <div class="test" id="bg-btn-2-2">
-<p class="fw-bolder btn-click" id="bg-btn-2-text"style="font-size: 12px;" onclick="change2()">S T A N D A R D&emsp;E D I T I O N</p>
+<p class="fw-bolder btn-click" id="bg-btn-2-text"style="font-size: .8rem; letter-spacing: 0.05em !important;" onclick="change2()">S T A N D A R D&emsp;E D I T I O N</p>
 </div>
 </div>
   </div>
 <h4 id="topic-buynow"class="topic-buynow px-3 py-4">Enter the land of Aeternum ready to face the supernatural frontier with the New World Deluxe Edition.</h4 class="topic-buynow">
-  <ul>
+  <ul style="letter-spacing: .03em !important; font-size: 1em;">
 <li>Explore a beautiful open world as you move through the wilderness and ruins of the island of Aeternum.</li>
 <li>Join forces with other players to form powerful companies of craftspeople, soldiers, and strategists.</li>
 <li>Claim and control territories to direct the development of settlements.</li>
@@ -364,7 +368,7 @@ padding-top:8.5px ;
 </ul>
   <div class="mt-5" id="list-bottom">
     <h6 class="fw-bolder" style="font-size: 12px; color: #fff1ce;">T H E&emsp;D E L U X E&emsp;E D I T I O N&emsp;I N C L U D E S:</h6>
-  <ul  class="list-text mt-4" > 
+  <ul  class="list-text mt-4" style="letter-spacing: .03em !important;"> 
     <li><strong>Woodsman armor skin.</strong> Stand out from the crowd or blend in with the forest with the Woodsman armor skin.</li>
     <li><strong>Woodsman hatchet skin. </strong>Complete the Woodsman look with this skin for the versatile hatchet</li>
     <li><strong>Mastiff house pet.</strong> Make your house a home with the Mastiff house pet. Access to housing unlocks at level 15 in-game.</li>
@@ -375,8 +379,6 @@ padding-top:8.5px ;
 </div>
 </div>
 </div>
-
-
     <footer style="position: relative">
       <div
         style="
@@ -392,7 +394,7 @@ padding-top:8.5px ;
           <div class="col-4 mt-4">
             <a href="index.html">
               <img
-                src="newword-logo.svg"
+                src="./image_buynow_and_main/newword-logo.svg"
                 style="width: 60%"
               />
             </a>
@@ -401,19 +403,20 @@ padding-top:8.5px ;
             <a style="display: flex; justify-content: center" href="#"
               ><img
                 style="position: absolute; top: -15px"
-                src="img-footer.png"
-            /></a>
+                src="./image_buynow_and_main/img-footer.png"
+            />
             <div style="text-decoration: none; color: white" class="topic mt-2">
               <h4>Back</h4>
               <h4>to top</h4>
             </div>
+            </a>
           </div>
           <div
             class="col-4 mt-4"
             style="display: flex; justify-content: flex-end"
           >
             <img
-              src="img-teen.svg"
+              src="./image_buynow_and_main/img-teen.svg"
               style="width: 40%; cursor: pointer"
             />
           </div>
@@ -422,7 +425,7 @@ padding-top:8.5px ;
       <center class="mt-4">
         <img
           style="width: 100%"
-          src="line-footer-thin.png"
+          src="./image_buynow_and_main/line-footer-thin.png"
         />
       </center>
       <div class="container mt-4">
@@ -430,7 +433,7 @@ padding-top:8.5px ;
           <div class="col-4">
             <svg
               class="games"
-              xmlns="http://www.w3.org/2000/svg"
+             
               viewBox="0 0 291.29 134.46"
               fill="#fff"
             >
@@ -445,7 +448,7 @@ padding-top:8.5px ;
             <h6 style="text-align: center" class="h">
               English (US)&emsp;<i
                 class="fas fa-chevron-down"
-                id="dropdown"
+                
               ></i>
             </h6>
           </div>
@@ -523,53 +526,40 @@ padding-top:8.5px ;
     </footer>
   </body>
   <script>
-    var count = 0;
+    var d = document.getElementById("dropdown");
+    var d2 = document.getElementById("dropdown2");
+    var d3 = document.getElementById("dropdown3");
     function check() {
-      console.log(count);
-      if (count === 0) {
-        document
-          .getElementById("dropdown")
-          .setAttribute("style", "transform: rotate(180deg)");
-        count = 1;
+      if (document.getElementById("show1").classList.contains("show")) {
+        d.setAttribute("style", "transform: rotate(180deg)");
+        d2.setAttribute("style", "transform: rotate(0deg)");
+        d3.setAttribute("style", "transform: rotate(0deg)");
       } else {
-        document
-          .getElementById("dropdown")
-          .setAttribute("style", "transform: rotate(0deg)");
-        count = 0;
+        d.setAttribute("style", "transform: rotate(0deg)");
       }
     }
 
-    var count2 = 0;
     function check2() {
-      if (count2 == 0) {
-        document
-          .getElementById("dropdown2")
-          .setAttribute("style", "transform: rotate(180deg)");
-        count2 = 1;
+      if (document.getElementById("show2").classList.contains("show")) {
+        d.setAttribute("style", "transform: rotate(0deg)");
+        d2.setAttribute("style", "transform: rotate(180deg)");
+        d3.setAttribute("style", "transform: rotate(0deg)");
       } else {
-        document
-          .getElementById("dropdown2")
-          .setAttribute("style", "transform: rotate(0deg)");
-        count2 = 0;
+        d2.setAttribute("style", "transform: rotate(0deg)");
       }
     }
 
-    var count3 = 0;
     function check3() {
-      if (count3 == 0) {
-        document
-          .getElementById("dropdown3")
-          .setAttribute("style", "transform: rotate(180deg)");
-        count3 = 1;
+      if (document.getElementById("show3").classList.contains("show")) {
+        d.setAttribute("style", "transform: rotate(0deg)");
+        d2.setAttribute("style", "transform: rotate(0deg)");
+        d3.setAttribute("style", "transform: rotate(180deg)");
       } else {
-        document
-          .getElementById("dropdown3")
-          .setAttribute("style", "transform: rotate(0deg)");
-        count3 = 0;
+        d3.setAttribute("style", "transform: rotate(0deg)");
       }
     }
     function change1(){
-      document.getElementById("img-buynow").src = "img-buynow-1.jpg";
+      document.getElementById("img-buynow").src = "./image_buynow_and_main/img-buynow-1.jpg";
       document.getElementById("price").innerHTML="$49.99"
       document.getElementById("topic-buynow").innerHTML="Enter the land of Aeternum ready to face the supernatural frontier with the New World Deluxe Edition."
       document.getElementById("list-bottom").style.display = "block";
@@ -582,7 +572,7 @@ padding-top:8.5px ;
     document.getElementById("bg-btn-2-text").classList.remove('btn-clicks');
     }
     function change2(){
-      document.getElementById("img-buynow").src = "img-buynow-2.jpg";
+      document.getElementById("img-buynow").src = "./image_buynow_and_main/img-buynow-2.jpg";
       document.getElementById("price").innerHTML="$39.99"
     document.getElementById("topic-buynow").innerHTML="Fate has summoned you to the shores of Aeternum, the Eternal Isle. In a land hell-bent on your destruction, what will you do to survive?"
     document.getElementById("list-bottom").style.display = "none";
